@@ -1,0 +1,26 @@
+#content {
+    position: relative;
+    animation-name: content;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+@keyframes content {
+    0% {right: -1000px;}
+    50% {right: 0;}
+    100% {right: 1000px;}
+}
+
+.btn {
+    opacity: 0;
+    animation-name: btn;
+    animation-duration: 3s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes btn {
+    0% {opacity:0}
+    100% {opacity: 1;}
+}
