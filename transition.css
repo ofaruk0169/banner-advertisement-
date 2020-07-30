@@ -1,26 +1,48 @@
-#content {
-    position: relative;
-    animation-name: content;
-    animation-duration: 10s;
-    animation-fill-mode: forwards;
-    animation-iteration-count: infinite;
-}
 
-@keyframes content {
-    0% {right: -1000px;}
-    50% {right: 0;}
-    100% {right: 1000px;}
-}
 
-.btn {
+
+
+#fly-in {
+    font-size: 4em;
+    margin: 20vh auto;
+    height: 20vh; 
+    text-transform: uppercase;
+  }
+  
+  #fly-in span {
+    display: block;
+    font-size: .4em;
+    opacity: .8;
+  }
+  
+  #fly-in div {
+   position: fixed; 
+    margin: 2vh 0;
     opacity: 0;
-    animation-name: btn;
-    animation-duration: 3s;
-    animation-delay: 3s;
-    animation-fill-mode: forwards;
-}
-
-@keyframes btn {
-    0% {opacity:0}
-    100% {opacity: 1;}
-}
+    left: 10vw;
+    width: 80vw;
+    animation: switch 82s linear infinite;
+  }
+  
+  #fly-in div:nth-child(2) { animation-delay: 10s}
+  #fly-in div:nth-child(3) { animation-delay: 20s}
+  #fly-in div:nth-child(4) { animation-delay: 30s}
+  #fly-in div:nth-child(5) { animation-delay: 40s}
+  #fly-in div:nth-child(6) { animation-delay: 50s}
+  #fly-in div:nth-child(7) { animation-delay: 60s}
+  #fly-in div:nth-child(8) { animation-delay: 70s}
+  
+  @keyframes switch {
+      0% { opacity: 0;filter: blur(20px); transform:scale(12)}
+      3% { opacity: 1;filter: blur(0); transform:scale(1)}
+      10% { opacity: 1;filter: blur(0); transform:scale(.9)}
+      13% { opacity: 0;filter: blur(10px); transform:scale(.1)}
+      33% { opacity: 0;filter: blur(10px); transform:scale(.1)}
+      
+      50% { opacity: 0;filter: blur(10px); transform:scale(.1)}
+      
+      60% { opacity: 0;filter: blur(10px); transform:scale(.1)}
+    
+      80% { opacity: 0}
+      100% { opacity: 0}
+  }
