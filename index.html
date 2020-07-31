@@ -1,38 +1,78 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>AdName</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <style>
+        .item {
+            background: #333;
+            text-align: center;
+            height: 120px;
+        }
 
-  <!-- <script  src="./script.js"></script> -->
-  <link rel='stylesheet' href='https://codepen.io/P1N2O/pen/xxbjYqx.css'>
-  <link rel="stylesheet" href="./style.css">
-  <link rel="stylesheet" href="./transition.css">
+        h2 {
+            margin: 0;
+            color: #888;
+            padding-top: 80px;
+            font-size: 30px;
+        }
 
-  
+        @media (max-height: 53px) {
+          .carousel-caption {
+            
+            
+          }
+          .item {
+            height: 100px;
+          }
+
+          h3 {
+            font-size: 20px;
+          }
+
+          p {
+            font-size: 10px;
+          }
+         
+
+        }
+    </style>
 </head>
-<body onclick="openAdUrl()">
+<body>
+    
+    <div class="thumbnail">
+        <div id="DemoCarousel" class="carousel slide" data-interval="6000" data-ride="carousel">
 
-    
-    
-    <div id="fly-in" class="text-fly text-light">  
-        <div><span>Advertise Here</span></div>
-        <div><span>Anunciar Aquí</span></div>
-        <div><span>Publier Ici</span></div>
-        <div><span>Anuncie Aqui</span></div>
-        <div><span>Werbe Hier</span></div>
-        <div><span>Reklamuj Się Tutaj</span></div>
-        <div><span>рекламировать здесь</span></div>
-        <div><span>在此处投放广告</div>
+            
+            <div class="carousel-inner">
+                <div class="item active">
+                    
+                    <div class="carousel-caption">
+                        <h3>This is the First Label</h3>
+                        <p>The Content of the First Slide goes in here</p>
+                    </div>
+                </div>
+                <div class="item">
+                    
+                    <div class="carousel-caption">
+                        <h3>This is the Second Label</h3>
+                        <p>The Content of the second Slide goes in here</p>
+                    </div>
+                </div>
+                <div class="item">
+                   
+                    <div class="carousel-caption">
+                        <h3>This is the Third Label</h3>
+                        <p>The Content of the Third Slide goes in here</p>
+                    </div>
+                </div>
+            </div>
+            
         </div>
-
-      
-  </div>
-
- 
-  
-
+    </div>
 </body>
 </html>
