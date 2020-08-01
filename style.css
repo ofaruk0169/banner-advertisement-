@@ -1,20 +1,61 @@
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
 body {
+    margin: 0;
+	display: table;
 	
-	height: 120px;
+	background: linear-gradient(-45deg, #fdcdbe, #fcb8d2, #b6eafd, #c0fff0);
+	background-size: 400% 400%;
+	-webkit-animation: gradient 15s ease infinite;
+	animation: gradient 15s ease infinite;
+}
 
-	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-	  background-size: 400% 400%;
-	  -webkit-animation: gradient 15s ease infinite;
-		  animation: gradient 15s ease infinite;
-	
+p {
+	margin: 0;
+	width: -webkit-fill-available;
+	font-family: 'Epilogue', sans-serif;
+	font-size: 11px;
+	color: black;
 
-	background-repeat: no-repeat;
-	background-attachment: fixed;
 	
+    margin-block-start: 0;
+	margin-block-end: 0;
+	
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.carousel-caption {
+    padding-top: 0;
+	padding-bottom: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+		
+    display: flex;
+	align-items: center;
+
+	text-shadow: 1px 1px 3px white;
+}
+.thumbnail {
+    display: table-cell; 
+    text-align: center;
+	vertical-align: middle;
+	
+	background-color: transparent;
+    margin-bottom: 0;
+	border: none;
+	padding: 0;
+}
+
+.item {
 	text-align: center;
-	width: 100vw;
-	font-weight: 700;
-	overflow: hidden;
+	height: 52px;
+	width: 100%;
 }
 
 @-webkit-keyframes gradient {
@@ -39,58 +80,4 @@ body {
 	100% {
 		background-position: 0% 50%;
 	}
-}
-
-
-
-.thumbnail {
-	height: 300px;
-	width: 700px;
-	background: rgba(0,0,0,0.0);
-	border: none;
-}
-
-.item {
-
-            text-align: center;
-			height: 300px;
-			
-	
-}
-
-h3 {
-	
-	color: azure;
-	
-	font-size: 40px;
-}
-
-
-
-
-@media (max-height: 53px) {
- 
-  .item {
-	height: 80px;
-  }
-
-  h3 {
-	font-size: 10px;
-  }
-
-  p {
-	font-size: 10px;
-  }
- 
-
-}
-
-
-.center-screen {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-	min-height: 100vh;
 }
